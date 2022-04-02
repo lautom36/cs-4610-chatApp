@@ -13,7 +13,7 @@
   height: 100vh;
 }
 
-.container {
+.app-container {
   display: flex;
   width: 100%;
   height: 100%;
@@ -91,5 +91,43 @@
   background-color: lightgray;
 }
 
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: #616161;
+  color: white
+}
 
+.chat-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
 
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-grow: 5;
+}
+
+.chat-input {
+  display: flex;
+  margin: 8px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 8px;
+  background-color: #757575;
+}
+
+.message {
+  padding: 16px;
+  border-bottom: 1px solid var(--primary-color);
+}

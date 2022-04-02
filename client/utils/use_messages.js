@@ -9,6 +9,7 @@ export const useMessages = (chatRoom) => {
   const [authToken] = useContext(AuthContext);
 
   useEffect(() => {
+    setMessages([]);
     if (chatRoom) {
       console.log(chatRoom.id);
       const socket = io({
